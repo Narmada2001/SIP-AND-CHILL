@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* extra utilities used by components */
+.animate-fadeInUp { animation: fadeInUp; }
+.animate-float { animation: float; }
+.animate-gradient { animation: gradient; background-size: 200% 200%; }
+
+html, body, #root {
+  height: 100%;
+}
+
+/* smooth scroll */
+* { scroll-behavior: smooth; }
