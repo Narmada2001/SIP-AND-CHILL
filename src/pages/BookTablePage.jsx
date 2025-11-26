@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Coffee, Phone, MapPin, Clock, Users } from 'lucide-react';
+import { Phone, MapPin, Clock, Users } from 'lucide-react';
+import bg from '../assets/bg.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export default function BookTablePage() {
@@ -41,13 +42,16 @@ export default function BookTablePage() {
 
   return (
     <section className="relative min-h-screen pt-28 pb-24 overflow-hidden" id="book-table">
-      {/* background */}
-      <div className="absolute inset-0 bg-linear-to-br from-[#3d1a0d] via-[#2e1309] to-[#241008]"></div>
-      <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '46px 46px' }}></div>
-      {/* coffee icons */}
-      <Coffee className="absolute top-20 left-10 text-amber-800/20" size={120} />
-      <Coffee className="absolute bottom-24 right-16 text-amber-700/15" size={160} />
-      <Coffee className="absolute bottom-10 left-1/2 -translate-x-1/2 text-amber-900/10" size={140} />
+      {/* background image */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-12">

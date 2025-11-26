@@ -1,15 +1,24 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Users, Send } from 'lucide-react';
+import bg from '../assets/bg.jpg';
 
 export default function ContactPage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-br from-amber-50 via-orange-50 to-stone-50 py-12 sm:py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <section
+        className="relative py-12 sm:py-16"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <span className="inline-block mb-3 text-xs font-semibold tracking-widest uppercase px-5 py-2 rounded-full bg-amber-100 text-amber-700">Contact</span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mb-3 tracking-tight">Get In Touch</h1>
-          <p className="text-stone-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">Have questions or want to book a table? We'd love to hear from you. Reach out and let's start a conversation.</p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 tracking-tight">Get In Touch</h1>
+          <p className="text-stone-100 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">Have questions or want to book a table? We'd love to hear from you. Reach out and let's start a conversation.</p>
         </div>
       </section>
 
@@ -81,8 +90,15 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative bg-linear-to-br from-stone-900 via-amber-950 to-stone-900 py-16 sm:py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+      <section
+        className="relative py-16 sm:py-20 overflow-hidden"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Visit?</h2>
           <p className="text-stone-300 mb-8 text-base sm:text-lg max-w-2xl mx-auto">Reserve your table now and experience the perfect blend of quality coffee and cozy ambiance.</p>
