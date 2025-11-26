@@ -15,14 +15,14 @@ const items = [
 
 export default function MenuPreview() {
   return (
-    <section className="py-16 sm:py-24 bg-stone-50" id="menu-preview">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-12">
+    <section className="py-16 sm:py-20 lg:py-24 bg-stone-50" id="menu-preview">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="text-center mb-12 lg:mb-16">
           <span className="inline-block text-xs tracking-widest uppercase font-bold px-4 py-1 rounded-full bg-amber-100 text-amber-700 mb-4">Menu Highlights</span>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight text-stone-800">A Taste To Remember</h2>
-          <p className="max-w-2xl mx-auto text-stone-600 text-base sm:text-lg">Handcrafted favorites using responsibly sourced ingredients—small batch, high quality, unforgettable flavor.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 tracking-tight text-stone-800">A Taste To Remember</h2>
+          <p className="max-w-3xl mx-auto text-stone-600 text-base sm:text-lg lg:text-xl px-4">Handcrafted favorites using responsibly sourced ingredients—small batch, high quality, unforgettable flavor.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {items.map((i, idx) => (
             <div key={i.title} className="group relative bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition border border-stone-200">
               <div className="w-full aspect-4/3 rounded-xl overflow-hidden mb-4 shadow-md">
