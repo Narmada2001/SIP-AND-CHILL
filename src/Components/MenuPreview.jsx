@@ -15,17 +15,17 @@ const items = [
 
 export default function MenuPreview() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-stone-50" id="menu-preview">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="text-center mb-12 lg:mb-16">
-          <span className="inline-block text-xs tracking-widest uppercase font-bold px-4 py-1 rounded-full bg-amber-100 text-amber-700 mb-4">Menu Highlights</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 tracking-tight text-stone-800">A Taste To Remember</h2>
-          <p className="max-w-3xl mx-auto text-stone-600 text-base sm:text-lg lg:text-xl px-4">Handcrafted favorites using responsibly sourced ingredients—small batch, high quality, unforgettable flavor.</p>
+    <section className="bg-stone-50" style={{ padding: 'clamp(2.5rem, 5vw + 0.5rem, 4.5rem) 0' }} id="menu-preview">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
+        <div className="text-center" style={{ marginBottom: 'clamp(2rem, 4vw, 3rem)' }}>
+          <span className="inline-block tracking-widest uppercase font-bold px-4 py-1 rounded-full bg-amber-100 text-amber-700" style={{ fontSize: 'clamp(0.625rem, 0.8vw + 0.1rem, 0.75rem)', marginBottom: 'clamp(0.625rem, 1.25vw, 1rem)' }}>Menu Highlights</span>
+          <h2 className="font-bold tracking-tight text-stone-800" style={{ fontSize: 'clamp(1.875rem, 3.5vw + 0.5rem, 3.5rem)', marginBottom: 'clamp(0.875rem, 1.75vw, 1.5rem)' }}>A Taste To Remember</h2>
+          <p className="max-w-3xl mx-auto text-stone-600 px-4" style={{ fontSize: 'clamp(1rem, 1.2vw + 0.25rem, 1.375rem)' }}>Handcrafted favorites using responsibly sourced ingredients—small batch, high quality, unforgettable flavor.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: 'clamp(1.25rem, 2vw, 2rem)' }}>
           {items.map((i, idx) => (
-            <div key={i.title} className="group relative bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition border border-stone-200">
-              <div className="w-full aspect-4/3 rounded-xl overflow-hidden mb-4 shadow-md">
+            <div key={i.title} className="group relative bg-white rounded-2xl shadow-sm hover:shadow-lg transition border border-stone-200" style={{ padding: 'clamp(1.25rem, 2vw, 1.75rem)' }}>
+              <div className="w-full aspect-4/3 rounded-xl overflow-hidden shadow-md" style={{ marginBottom: 'clamp(0.875rem, 1.5vw, 1.25rem)' }}>
                 <img src={i.image} alt={i.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
               </div>
               <h3 className="font-semibold text-lg mb-1 text-stone-800">{i.title}</h3>
@@ -38,8 +38,8 @@ export default function MenuPreview() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-12">
-          <Link to="/gallery" className="inline-block px-8 py-3 rounded-full bg-linear-to-r from-amber-600 to-orange-500 text-white font-semibold shadow hover:shadow-lg hover:scale-[1.03] transition">View Full Gallery</Link>
+        <div className="text-center" style={{ marginTop: 'clamp(1.75rem, 3.5vw, 3rem)' }}>
+          <Link to="/gallery" className="inline-block rounded-full bg-linear-to-r from-amber-600 to-orange-500 text-white font-semibold shadow hover:shadow-lg hover:scale-[1.03] transition" style={{ fontSize: 'clamp(0.9375rem, 1vw + 0.25rem, 1.125rem)', padding: 'clamp(0.75rem, 1vw, 1rem) clamp(2rem, 2.5vw, 2.5rem)' }}>View Full Gallery</Link>
         </div>
       </div>
     </section>
